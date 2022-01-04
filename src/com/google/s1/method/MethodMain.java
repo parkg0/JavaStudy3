@@ -1,5 +1,7 @@
 package com.google.s1.method;
 
+import java.util.Scanner;
+
 public class MethodMain {
 
 	public static void main(String[] args) {
@@ -27,7 +29,11 @@ String name =rs.test3();
 System.out.println("test3:"+name);
 
 double a=Math.random();
-System.out.println(a);
+
+Scanner sc=rs.test4(); //test4호출 하면 리턴으로 데이터타입 스캐너인 변수를 내
+System.out.println("나이 입력");
+int age =sc.nextInt();
+System.out.println("Math.random:"+a);
 //-------------------
 System.out.println("MainMethod Finish");
 	}

@@ -14,11 +14,14 @@ public class ReturnStudy {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("이름을 입력하세요");
 		String name = sc.next(); 
-		//				호출
+		//				호
 		
 		return name;
 	}
-	
+	public Scanner test4() {
+	Scanner sc= new Scanner(System.in);
+	return sc;
+	}
 	
 	
 	public int test2() {

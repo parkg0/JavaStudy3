@@ -3,6 +3,7 @@ package com.google.s1.student;
 import java.util.Scanner;
 
 public class StudentUtil {
+	//학생을 생성하고 정보를 입력받는 
 
 	public  Student[] makeStudents() {
 		Scanner sc= new Scanner(System.in);

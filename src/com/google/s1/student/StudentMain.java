@@ -6,6 +6,7 @@ public class StudentMain {
 		// 1.Main Method 역할
 		// 1)start 와 초기화
 		// 2)test
+		StudentUtil su = new StudentUtil();
 		StudentView sv = new StudentView();
 		// sv에 담아 힙에다가 스튜던트뷰타입 만들고 시작점의 주소를 .
 
@@ -23,17 +24,21 @@ public class StudentMain {
 		stu2.eng = 40;
 		stu2.math = 70;
 
-		Student[] Students = new Student[2];
-		Students[0] = stu;
-		Students[1] = stu2;
+		Student[] students = new Student[2];
+		students[0] = stu;
+		students[1] = stu2;
 
-		sv.viewStudents(Students);
-		System.out.println("-------------------");
-		sv.viewStudent(stu);
-		System.out.println("-------------------");
-		String msg = "Hello";
-		sv.viewMessage(msg);
-		System.out.println("-------------------");
+		
+	su.search(students);
+		
+//		sv.viewStudents(Students);
+//		System.out.println("-------------------");
+//		sv.viewStudent(stu);
+//		System.out.println("-------------------");
+//		String msg = "Hello";
+//		sv.viewMessage(msg);
+//		System.out.println("-------------------");
+//		
 	}
 
 }

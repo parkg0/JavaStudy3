@@ -32,19 +32,21 @@ public class StudentController {
 					sv.viewMessage("학생정보를 먼저 입력하세요.");
 				}
 				break;
+				
 			case 3:
 				if(students==null) {
 					sv.viewMessage("학생정보가 없습니다.");
 			continue;
 			}
 				Student student = su.search(students);// 리턴값student
-				if (students != null) {
+				if (student != null) {
 					sv.viewStudent(student);
 				} else {
 					sv.viewMessage("학생정보가 없습니다.");
 				}
 				break;
 
+				
 			case 4:
 				System.out.println("프로그램을 종료합니다.");
 				flag = false;

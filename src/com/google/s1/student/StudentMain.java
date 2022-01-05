@@ -5,6 +5,29 @@ public class StudentMain {
 	public static void main(String[] args) {
 		StudentController sc= new StudentController();
 		sc.start();
+		
+//		Student student = new Student();
+//		student.name= "iu";
+//		student.kor=10;
+//		student.math=10;
+//		student.eng=10;
+		
+//		student.hello();
+//		student.makeTotal();
+		
+		
+//		System.out.println("참조변수student:"+student);
+//		System.out.println("Studet Total:"+student.total);
+//		Student student2 = new Student();
+//		student2.kor=20;
+//		student2.math=20;
+//		student2.eng=20;
+//		student2.makeTotal();
+//		System.out.println("Studet2 Total:"+student2.total);
+//		System.out.println("참조변수 studnet2:"+student2);
+
+		//this는 만들어진 객체의 자기자신을 나타냄 
+		//sc.start();
 //		// 1.Main Method 역할
 //		// 1)start 와 초기화
 //		// 2)test

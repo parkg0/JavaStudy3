@@ -11,6 +11,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 
 		StudentUtil su = new StudentUtil();
+		su.initUtil();//스캐너 초기화 
 		StudentView sv = new StudentView(); // while문 들어오기 전에
 
 		while (flag) {

@@ -10,16 +10,14 @@ public class StudentView {
 		System.out.println("국어점수:" + st.kor);
 		System.out.println("영어점수:" + st.eng);
 		System.out.println("수학점수:" + st.math);
+		System.out.println("총점:"+st.total);
+		System.out.println("평균:"+st.avg);
 	}
 
 	// view students- 여러명의 학생의 모든정보를출력
 	public void viewStudents(Student[] students) {
 		for (int i = 0; i < students.length; i++) {
-			System.out.println("이름:" + students[i].name);
-			System.out.println("번호:" + students[i].number);
-			System.out.println("국어점수:" + students[i].kor);
-			System.out.println("영어점수:" + students[i].eng);
-			System.out.println("수학점수:" + students[i].math);
+			this.viewStudent(students[i]);
 		}
 	}
 

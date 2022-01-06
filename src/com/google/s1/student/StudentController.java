@@ -2,17 +2,19 @@ package com.google.s1.student;
 
 import java.util.Scanner;
 
-public class StudentController {
+public class StudentController {//클래스 선언  class =예약어
 
 	public void start() {
 		Student[] students = null;
 
 		boolean flag = true;
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); //new: heap에다가 만들라는 연산자
 
 		StudentUtil su = new StudentUtil();
-		su.initUtil();//스캐너 초기화 
+		//su.initUtil();//스캐너 초기화 
+		//참조변수.메서드명(); 
 		StudentView sv = new StudentView(); // while문 들어오기 전에
+		//                   생성자
 
 		while (flag) {
 			System.out.println("1.학생들의 정보 입력"); // util class
@@ -28,22 +30,22 @@ public class StudentController {
 				break;
 			case 2:
 				if (students != null) {
-					sv.viewStudents(students);
+					sv.view(students);
 				} else {
-					sv.viewMessage("학생정보를 먼저 입력하세요.");
+					sv.view("학생정보를 먼저 입력하세요.");
 				}
 				break;
 				
 			case 3:
 				if(students==null) {
-					sv.viewMessage("학생정보가 없습니다.");
+					sv.view("학생정보가 없습니다.");
 			continue;
 			}
 				Student student = su.search(students);// 리턴값student
 				if (student != null) {
-					sv.viewStudent(student);
+					sv.view(student);
 				} else {
-					sv.viewMessage("학생정보가 없습니다.");
+					sv.view("학생정보가 없습니다.");
 				}
 				break;
 

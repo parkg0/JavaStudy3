@@ -17,6 +17,8 @@ public class SquareMain {
 		boolean check=s2.same(s1);
 		System.out.println(check);
 		
+		
+		
 	}
 
 }

@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class StudentUtil {// 학생 객체를 생성하고 정보를 입력받는
 	Scanner sc; //스캐너를 멤버변수로 선언 
+
+public StudentUtil() {
+	this.sc= new Scanner(System.in);
+}
+	
 	Student student;
 	public void initUtil() { //init사용하기전에 초기화 
 		this.sc=new Scanner(System.in); //this 생략가
